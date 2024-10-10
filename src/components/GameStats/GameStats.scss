@@ -1,0 +1,24 @@
+.game-stats {
+  background-color: #ffffff;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.game-stats h2 {
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.game-stats p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
