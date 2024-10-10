@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useGameStore } from "../../store/gameStore";
-
 import { getRandomImages } from "../../utils/imageLoader";
 import "./GameBoard.scss";
 import Tile from "../Tile/Tile";
@@ -125,21 +124,20 @@ const GameBoard = ({
 
   return (
     <div className="game-board">
-      {isGameFinished ? (
+      {isGameFinished && (
         <div className="game-over">
           <h1>Game Over</h1>
           <p>You finished the game in {attempts} attempts.</p>
           <button onClick={initializeBoard}>Play Again</button>
         </div>
-      ) : (
-        tiles.map((tile) => (
-          <Tile
-            key={tile.id}
-            {...tile}
-            onClick={() => handleTileClick(tile.id)}
-          />
-        ))
       )}
+      {tiles.map((tile) => (
+        <Tile
+          key={tile.id}
+          {...tile}
+          onClick={() => handleTileClick(tile.id)}
+        />
+      ))}
     </div>
   );
 };

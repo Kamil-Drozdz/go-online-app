@@ -3,6 +3,7 @@ import dog from "../assets/dog.jfif";
 import monkey from "../assets/monkey.jfif";
 import giraffe from "../assets/giraffe.jfif";
 import lama from "../assets/lama.jfif";
+
 import fox from "../assets/fox.jfif";
 
 const images = [cat, dog, monkey, giraffe, lama, fox];
